@@ -1,111 +1,90 @@
-# WardrobeIQ 👗
+# 👗 WardrobeIQ — Smart Wardrobe Management App
 
-**Smart Wardrobe Management and Outfit Recommendations**
-
-WardrobeIQ is an Android application designed to help users organize their clothing collection, manage wardrobe items, and get outfit recommendations based on clothing attributes and personal preferences.
+WardrobeIQ is an Android application designed to help users organize their clothing digitally and manage wardrobe items in one place. Users can add clothing images, categorize items, and store clothing details for easier wardrobe management.
 
 ## ✨ Features
 
-- **User Authentication:** User registration and login.
-- **Digital Wardrobe:** Add and manage clothing items in a personal wardrobe.
-- **Clothing Images:** Capture photos using the camera or select images from the gallery.
-- **Clothing Categorization:** Organize items by category, color, pattern, occasion, and season.
-- **Warmth and Formality Ratings:** Classify clothing based on warmth and formality levels.
-- **Image Analysis:** Use image labeling to help identify wardrobe-related items.
-- **Local Database:** Store clothing information using Room.
-- **Wear Tracking:** Track how often clothing items are worn.
-- **Outfit Recommendations:** Support smart outfit selection based on wardrobe information.
+- 📸 **Add Clothing Items:** Select clothing images using the camera or gallery.
+- 🤖 **Image Analysis:** Uses Google ML Kit image labeling to analyze selected images.
+- 🗂️ **Clothing Categorization:** Organize clothing by category, color, pattern, occasion, season, warmth, and formality.
+- 💾 **Local Storage:** Stores clothing information using Room Database.
+- 👕 **Digital Wardrobe:** Keep clothing details organized within the application.
+- 🔌 **Backend Integration:** A separate Node.js and Express backend is maintained for server-side functionality and image uploads.
 
-## 🛠️ Technology Stack
+> Note: List only features that are implemented and tested in your current version. Add outfit recommendations, login, or registration to this list when those features are working.
 
-- **Language:** Java
-- **Platform:** Android
-- **IDE:** Android Studio
-- **Database:** Room Persistence Library
-- **Image Analysis:** Google ML Kit Image Labeling
-- **Backend:** Node.js and Express
-- **File Uploads:** Multer
-- **Version Control:** Git and GitHub
+## 📱 Screenshots
+
+Add screenshots of your running application to the `screenshots/` folder in this repository.
+
+### Wardrobe Screen
+
+![Wardrobe Screen](screenshots/wardrobe.png)
+
+### Add Clothing Screen
+
+![Add Clothing Screen](screenshots/add-clothing.png)
+
+### Clothing Details / Categorization
+
+![Clothing Details Screen](screenshots/clothing-details.png)
+
+### Image Selection or Analysis
+
+![Image Analysis Screen](screenshots/image-analysis.png)
+
+## 🛠️ Technologies Used
+
+### Android Application
+- Java
+- Android Studio
+- XML layouts
+- Room Database
+- Google ML Kit Image Labeling
+- Android Camera and Gallery APIs
+
+### Backend
+- Node.js
+- Express.js
+- Multer for handling file uploads
+
+**Backend repository:**  
+https://github.com/divya004-spec/WardrobeIQBackend
 
 ## 🏗️ Project Structure
 
 ```text
 WardrobeIQ/
 ├── app/
-│   └── src/
-│       └── main/
-│           ├── java/
-│           ├── res/
-│           └── AndroidManifest.xml
 ├── gradle/
 ├── build.gradle.kts
-├── gradle.properties
+├── settings.gradle.kts
 ├── gradlew
 ├── gradlew.bat
-├── settings.gradle.kts
-└── README.md
+├── README.md
+└── screenshots/
+    ├── wardrobe.png
+    ├── add-clothing.png
+    ├── clothing-details.png
+    └── image-analysis.png
 ```
 
-## ⚙️ Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+1. Clone or download this repository.
+2. Open the project in Android Studio.
+3. Allow Gradle to sync and download the required dependencies.
+4. Run the application on an Android emulator or a compatible Android device.
 
-- Android Studio
-- Android SDK compatible with the project
-- JDK version required by the project's Gradle configuration
-- Git
+## 🔗 Repositories
 
-### Installation
+- **Android Application:** https://github.com/divya004-spec/WardrobeIQ
+- **Backend API:** https://github.com/divya004-spec/WardrobeIQBackend
 
-1. Clone the repository:
+## 🎯 Project Goal
 
-   ```bash
-   git clone https://github.com/divya004-spec/WardrobeIQ.git
-   ```
+The goal of WardrobeIQ is to make wardrobe organization more convenient through digital clothing management and image-based analysis, with scope for future smart outfit recommendations.
 
-2. Open Android Studio.
-3. Select **Open** and choose the cloned `WardrobeIQ` folder.
-4. Allow Gradle to sync and download the required dependencies.
-5. Configure an Android emulator or connect an Android device.
-6. Run the application using Android Studio.
+## 👩‍💻 Developed As
 
-## 🖼️ Adding Clothing Items
-
-1. Open the application and log in.
-2. Navigate to the clothing-addition screen.
-3. Capture a photo or select an image from the gallery.
-4. Choose the appropriate category, color, pattern, occasion, season, warmth, and formality.
-5. Save the item to your wardrobe.
-
-## 🌐 Backend
-
-The project also includes a separate Node.js and Express backend.
-
-Backend repository: [WardrobeIQBackend](https://github.com/divya004-spec/WardrobeIQBackend)
-
-The backend is intended to support server-side functionality and image upload operations. Backend deployment and integration should be configured according to the current project setup.
-
-## 🚧 Project Status
-
-**Development in progress.**
-
-WardrobeIQ is being developed as a mobile computing mini-project. Features and integrations may change as development continues.
-
-## 🔮 Future Enhancements
-
-- Improved personalized outfit recommendations.
-- Weather-aware outfit suggestions.
-- Advanced wardrobe analytics and wear statistics.
-- Enhanced image-based clothing classification.
-- Improved synchronization between the Android app and backend.
-- A polished and accessible user interface.
-
-## 👩‍💻 Author
-
-**Divya Digambar Basutkar**
-
-GitHub: [@divya004-spec](https://github.com/divya004-spec)
-
-## 📄 License
-
-No license has been specified yet.
+An Android development mini-project focused on mobile application development, local data persistence, image analysis, and backend integration.

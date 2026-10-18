@@ -11,11 +11,10 @@ WardrobeIQ is an Android application designed to help users organize their cloth
 - 👕 **Digital Wardrobe:** Keep clothing details organized within the application.
 - 🔌 **Backend Integration:** A separate Node.js and Express backend is maintained for server-side functionality and image uploads.
 
-> Note: List only features that are implemented and tested in your current version. Add outfit recommendations, login, or registration to this list when those features are working.
 
 ## 📱 Screenshots
 
-Add screenshots of your running application to the `screenshots/` folder in this repository.
+Added screenshots of your running application to the `screenshots/` folder in this repository.
 
 ### Wardrobe Screen
 

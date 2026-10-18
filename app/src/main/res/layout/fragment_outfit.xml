@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Outfit Ideas"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell me where you are going, or pick from the lists."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
+
+        <EditText
+            android:id="@+id/edtRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. What should I wear to college tomorrow?"
+            android:inputType="textCapSentences"
+            android:maxLines="2"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Occasion"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerOutfitOccasion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weather / Season"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerOutfitSeason"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <Button
+            android:id="@+id/btnSuggestOutfits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUGGEST OUTFITS"
+            android:layout_marginTop="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already decided your outfit?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick the clothes from your wardrobe and I will suggest shoes that go with them."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/btnPickOutfit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PICK MY CLOTHES"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/txtPickedHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No clothes picked yet."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/layoutPickedItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="6dp" />
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btnSuggestShoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUGGEST SHOES FOR THIS OUTFIT"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtOutfitStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutOutfitResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imgClothing"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:contentDescription="Clothing image" />
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:textSize="17sp"
+            android:textColor="#555555"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtPattern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pattern"
+            android:textSize="17sp"
+            android:textColor="#555555"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/txtOccasion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Occasion"
+            android:textSize="17sp"
+            android:textColor="#555555"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/txtSeason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Season"
+            android:textSize="17sp"
+            android:textColor="#555555"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/txtWarmth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warmth"
+            android:textSize="17sp"
+            android:textColor="#555555"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/txtFormality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formality"
+            android:textSize="17sp"
+            android:textColor="#555555"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/txtWearCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Times worn: 0"
+            android:textSize="17sp"
+            android:textColor="#555555"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/txtLastWorn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last worn: Never"
+            android:textSize="17sp"
+            android:textColor="#555555"
+            android:layout_marginTop="6dp" />
+
+        <Button
+            android:id="@+id/btnMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MATCH THIS ITEM"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDIT ITEM"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELETE ITEM"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>

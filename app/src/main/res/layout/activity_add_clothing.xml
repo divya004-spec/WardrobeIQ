@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Clothing"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add an item to your wardrobe"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
+
+
+        <!-- Image Preview -->
+
+        <ImageView
+            android:id="@+id/imgClothingPreview"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="24dp"
+            android:background="#E8E4DE"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:contentDescription="Clothing preview" />
+
+
+        <Button
+            android:id="@+id/btnRemovePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REMOVE PHOTO"
+            android:layout_marginTop="8dp" />
+
+        <!-- Image Buttons -->
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TAKE PHOTO"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnChooseGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHOOSE FROM GALLERY"
+            android:layout_marginTop="8dp" />
+
+
+        <!-- Category -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="24dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+
+
+        <!-- Color -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+
+
+        <!-- Pattern -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pattern"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerPattern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+
+
+        <!-- Occasion -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Occasion"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerOccasion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+
+
+        <!-- Season -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Season"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerSeason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+
+
+        <!-- Warmth -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warmth Level"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerWarmth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+
+
+        <!-- Formality -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formality"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerFormality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+
+
+        <!-- Save -->
+
+        <Button
+            android:id="@+id/btnSaveClothing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE CLOTHING"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF8F5"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Wardrobe"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#222222" />
+
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your wardrobe is empty.\nAdd your first clothing item."
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:padding="30dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerWardrobe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btnAddClothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ ADD CLOTHING"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
